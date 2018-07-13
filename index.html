@@ -323,7 +323,7 @@
                 
               
 
-              <time title="Created: 2018-07-13 19:45:35 / Modified: 22:44:15" itemprop="dateCreated datePublished" datetime="2018-07-13T19:45:35+08:00">2018-07-13</time>
+              <time title="Created: 2018-07-13 19:45:35 / Modified: 22:45:59" itemprop="dateCreated datePublished" datetime="2018-07-13T19:45:35+08:00">2018-07-13</time>
             
 
             
@@ -366,18 +366,6 @@
 <p>npm WARN saveError ENOENT: no such file or directory, open ‘D:\SherryZhou\Homepage\package.json’<br>D:\SherryZhou\Homepage<br>`– <a href="mailto:hexo@3.6.0" target="_blank" rel="noopener">hexo@3.6.0</a></p>
 <p>npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\chokidar\node_modules\fsevents):<br>npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for <a href="mailto:fsevents@1.1.3" target="_blank" rel="noopener">fsevents@1.1.3</a>: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”})<br>npm WARN enoent ENOENT: no such file or directory, open ‘D:\SherryZhou\Homepage\package.json’<br>npm WARN Homepage No description<br>npm WARN Homepage No repository field.<br>npm WARN Homepage No README data<br>npm WARN Homepage No license field.</p>
 <p>原因：项目目录下没有package.json这个文件。可以使用npm init -f命令生成一下<br>解决：$ npm init -f  (或npm init -y)<br>npm WARN using –force I sure hope you know what you are doing.<br>Wrote to D:\SherryZhou\Homepage\hexotext\package.json:</p>
-<p>{<br>  “name”: “hexotext”,<br>  “version”: “1.0.0”,<br>  “main”: “index.js”,<br>  “scripts”: {<br>    “test”: “echo \”Error: no test specified\” &amp;&amp; exit 1”<br>  },<br>  “keywords”: [],<br>  “author”: “”,<br>  “license”: “ISC”,<br>  “description”: “”<br>}</p>
-<p>2.问题：执行$ hexo init 时报错：<br>zhoumiaomiao@HOIT101 MINGW64 /d/SherryZhou/Homepage/hexotext<br>$ hexo init<br>bash: hexo: command not found</p>
-<p>原因：hexo没有配置全局变量<br>解决：找一下hexo装在哪里了，配置一下</p>
-<p>3.问题：在上一步寻找环境变量时发现hexo安装目录找不到了，重新装：<br>zhoumiaomiao@HOIT101 MINGW64 /d/SherryZhou/Hexo<br>$ npm install hexo-cli -g</p>
-<p>之后报错：<br>npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\he                  xo-cli\node_modules\chokidar\node_modules\fsevents):<br>npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@                  1.1.3: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”}                  )</p>
-<p>原因：出现这个警告的原因好像时因为用的不是mac系统，这条忽略就好。<br>解决：安装的时候发现了之前的默认安装目录：<br>C:\Users\zhoumiaomiao\AppData\Roaming\npm\hexo -&gt; C:\Users\zhoumiaomiao\AppData\                  Roaming\npm\node_modules\hexo-cli\bin\hexo</p>
-<p>配一下环境变量：D:\SherryZhou\Homepage\hexotext\node_modules\hexo\bin<br>hexo -v就可以了</p>
-<p>4.问题：hexo init时报错：FATAL D:\SherryZhou\Homepage\hexotext not empty, please run <code>hexo init</code> on an empty folder and then copy your files into it<br>FATAL Something’s wrong. Maybe you can find the solution here: <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">http://hexo.io/docs/troubleshooting.html</a><br>Error: target not empty<br>原因：这个文件夹不为空<br>解决：新建一个文件夹执行hexo init即可（这个文件夹我起名叫hexospace作为本地hexo根目录），执行成功：<br>INFO  Start blogging with Hexo!</p>
-<p>5.问题：执行$ ssh-keygen -t rsa -C “<a href="mailto:5832xxxxx@qq.com" target="_blank" rel="noopener">5832xxxxx@qq.com</a>“时提示：<br>Generating public/private rsa key pair.<br>Enter file in which to save the key (/c/Users/zhoumiaomiao/.ssh/id_rsa): 。。。。。。。。<br>原因：这里我以前设置过git，但是手残覆盖了以前的公钥，重新生成了。<br>解决：只能重新配置一遍git，顺便发现git也要设置代理，需要很长的时间来重新配置。</p>
-<p>6.执行$ hexo new post “TestTitle”时报错：<br>FATAL bad indentation of a mapping entry at line 82, column 9:<br>      branch: master<br>            ^<br>YAMLException: bad indentation of a mapping entry at line 82, column 9:<br>      branch: master<br>请确认您使用空格进行缩进（Soft tab），并确认冒号后有一个空格。<br>原因：在配置所有的_config.yml文件时（包括theme中的），在所有的冒号:后边都要加一个空格，否则执行hexo命令会报错。<a href="http://blog.csdn.net/zoeyyeoz/article/details/51143613" target="_blank" rel="noopener">http://blog.csdn.net/zoeyyeoz/article/details/51143613</a><br>解决：将_config.yml文件最后加的内容改成以下样式就不报错了：</p>
-<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:SherrymmZhou/SherrymmZhou.github.io.git<br>  branch: master</p>
-<p>7.执行$ hexo d  时报错：  ERROR Deployer not found: git<br>原因：没有提前安装一个扩展<br>解决：npm install –save hexo-deployer-git</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/13/搭建hexo时，报错记录及解决/#more" rel="contents">

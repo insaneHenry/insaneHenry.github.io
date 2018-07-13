@@ -115,7 +115,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="搭建hexo时，报错记录及解决 转载▼http://blog.sina.com.cn/s/blog_a03baecd0102xp7i.html标签： hexo git nodejs npm    分类： 计算机1.问题：执行 $ npm install hexo –save 时报错： npm WARN saveError ENOENT: no such file or directory, ope">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-13T14:44:15.650Z">
+<meta property="og:updated_time" content="2018-07-13T14:45:59.563Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建hexo时，报错记录及解决">
 <meta name="twitter:description" content="搭建hexo时，报错记录及解决 转载▼http://blog.sina.com.cn/s/blog_a03baecd0102xp7i.html标签： hexo git nodejs npm    分类： 计算机1.问题：执行 $ npm install hexo –save 时报错： npm WARN saveError ENOENT: no such file or directory, ope">
@@ -322,7 +322,7 @@
                 
               
 
-              <time title="Created: 2018-07-13 19:45:35 / Modified: 22:44:15" itemprop="dateCreated datePublished" datetime="2018-07-13T19:45:35+08:00">2018-07-13</time>
+              <time title="Created: 2018-07-13 19:45:35 / Modified: 22:45:59" itemprop="dateCreated datePublished" datetime="2018-07-13T19:45:35+08:00">2018-07-13</time>
             
 
             
@@ -364,6 +364,7 @@
 <p>npm WARN saveError ENOENT: no such file or directory, open ‘D:\SherryZhou\Homepage\package.json’<br>D:\SherryZhou\Homepage<br>`– <a href="mailto:hexo@3.6.0" target="_blank" rel="noopener">hexo@3.6.0</a></p>
 <p>npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@^1.0.0 (node_modules\chokidar\node_modules\fsevents):<br>npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for <a href="mailto:fsevents@1.1.3" target="_blank" rel="noopener">fsevents@1.1.3</a>: wanted {“os”:”darwin”,”arch”:”any”} (current: {“os”:”win32”,”arch”:”x64”})<br>npm WARN enoent ENOENT: no such file or directory, open ‘D:\SherryZhou\Homepage\package.json’<br>npm WARN Homepage No description<br>npm WARN Homepage No repository field.<br>npm WARN Homepage No README data<br>npm WARN Homepage No license field.</p>
 <p>原因：项目目录下没有package.json这个文件。可以使用npm init -f命令生成一下<br>解决：$ npm init -f  (或npm init -y)<br>npm WARN using –force I sure hope you know what you are doing.<br>Wrote to D:\SherryZhou\Homepage\hexotext\package.json:</p>
+<a id="more"></a>
 <p>{<br>  “name”: “hexotext”,<br>  “version”: “1.0.0”,<br>  “main”: “index.js”,<br>  “scripts”: {<br>    “test”: “echo \”Error: no test specified\” &amp;&amp; exit 1”<br>  },<br>  “keywords”: [],<br>  “author”: “”,<br>  “license”: “ISC”,<br>  “description”: “”<br>}</p>
 <p>2.问题：执行$ hexo init 时报错：<br>zhoumiaomiao@HOIT101 MINGW64 /d/SherryZhou/Homepage/hexotext<br>$ hexo init<br>bash: hexo: command not found</p>
 <p>原因：hexo没有配置全局变量<br>解决：找一下hexo装在哪里了，配置一下</p>
@@ -376,7 +377,6 @@
 <p>6.执行$ hexo new post “TestTitle”时报错：<br>FATAL bad indentation of a mapping entry at line 82, column 9:<br>      branch: master<br>            ^<br>YAMLException: bad indentation of a mapping entry at line 82, column 9:<br>      branch: master<br>请确认您使用空格进行缩进（Soft tab），并确认冒号后有一个空格。<br>原因：在配置所有的_config.yml文件时（包括theme中的），在所有的冒号:后边都要加一个空格，否则执行hexo命令会报错。<a href="http://blog.csdn.net/zoeyyeoz/article/details/51143613" target="_blank" rel="noopener">http://blog.csdn.net/zoeyyeoz/article/details/51143613</a><br>解决：将_config.yml文件最后加的内容改成以下样式就不报错了：</p>
 <h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:SherrymmZhou/SherrymmZhou.github.io.git<br>  branch: master</p>
 <p>7.执行$ hexo d  时报错：  ERROR Deployer not found: git<br>原因：没有提前安装一个扩展<br>解决：npm install –save hexo-deployer-git</p>
-<a id="more"></a>
 
       
     </div>
