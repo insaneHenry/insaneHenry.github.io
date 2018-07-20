@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于hexo标签和分类的问题]]></title>
+    <url>%2F2018%2F07%2F20%2FHexo%E6%95%99%E7%A8%8B%2F%E5%85%B3%E4%BA%8Ehexo%E6%A0%87%E7%AD%BE%E5%92%8C%E5%88%86%E7%B1%BB%E7%9A%84%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[打开站点配置文件 的配置 \hexo_config.yml找到 Category &amp; Tagdefault_category: articlecategory_map: {test: testCate}tag_map: {test: testTag} permalink: :category/:title.html ` 现在就可以访问到别名 testCate 了]]></content>
+      <categories>
+        <category>Hexo教程</category>
+      </categories>
+      <tags>
+        <tag>-hexo -标签 -分类</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[hexo可用图床]]></title>
     <url>%2F2018%2F07%2F19%2FHexo%E6%95%99%E7%A8%8B%2Fhexo%E5%8F%AF%E7%94%A8%E5%9B%BE%E5%BA%8A%2F</url>
     <content type="text"><![CDATA[https://sm.ms/ http://upload.otar.im/ 当然，用imgur也是极好的！]]></content>
