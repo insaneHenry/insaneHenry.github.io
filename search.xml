@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[教程:如何导出telegram表情]]></title>
     <url>%2F2018%2F08%2F02%2Ftelegram%2F%E6%95%99%E7%A8%8B-%E5%A6%82%E4%BD%95%E5%AF%BC%E5%87%BAtelegram%E8%A1%A8%E6%83%85%2F</url>
-    <content type="text"><![CDATA[转自91yun https://www.91yun.co/archives/32561telegram 的表情真的是太多了 , 因为收藏十分方便 , 网友发一张图你就能收集到一整套 . 真的好想倒到微信用啊 . 那要怎么导出呢 . 在 Telegram 里添加机器人@stickerset2packbot 开始选择表情输入 /newpack 系统就会提示你可以发送表情了把你想要导出的表情通通发给它 . 一次能发 200 张发完后输入 /finish 系统就会自动开始开始打包了打包结束 , 就可以直接下载打包的 zip 文件拉解压开 zip 文件 , 看看是不是你要的表情都是一张张 jpg 图片拉PS: 因为要下载打包的 zip 文件 , 所以 建议在电脑客户端或者 web 端 进行 (https://web.telegram.org/) 导入微信我目前用的方法是先把图片保存到手机 .( 可以通过网盘传输到手机 ) 然后在微信里面添加相册的图片为表情]]></content>
+    <content type="text"><![CDATA[转自91yun https://www.91yun.co/archives/32561telegram 的表情真的是太多了 , 因为收藏十分方便 , 网友发一张图你就能收集到一整套 . 真的好想倒到微信用啊 . 那要怎么导出呢 . 在 Telegram 里添加机器人@stickerset2packbot 开始选择表情输入 /newpack 系统就会提示你可以发送表情了把你想要导出的表情通通发给它 . 一次能发 200 张发完后输入 /finish 系统就会自动开始开始打包了打包结束 , 就可以直接下载打包的 zip 文件拉解压开 zip 文件 , 看看是不是你要的表情都是一张张 jpg 图片拉 PS: 因为要下载打包的 zip 文件 , 所以 建议在电脑客户端或者 web 端 进行 (https://web.telegram.org/) 导入微信我目前用的方法是先把图片保存到手机 .( 可以通过网盘传输到手机 ) 然后在微信里面添加相册的图片为表情]]></content>
       <categories>
         <category>telegram</category>
       </categories>
