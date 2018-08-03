@@ -8,7 +8,9 @@
         <category>cloudflare</category>
       </categories>
       <tags>
-        <tag>-cloudflare -000webhost</tag>
+        <tag>cloudflare</tag>
+        <tag>000webhost</tag>
+        <tag>ssl</tag>
       </tags>
   </entry>
   <entry>
